@@ -1,0 +1,10 @@
+<script>
+function func() {
+  alert(document.form1.text1.value + 4);        // "1234" になります
+  alert(Number(document.form1.text1.value) + 4);  // 127 になります
+}
+</script>
+<form name="form1" action="#">
+<input type="text" name="text1" value="">
+<input type="button" value="OK" onclick="func()">
+</form>
