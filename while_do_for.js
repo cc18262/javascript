@@ -21,3 +21,16 @@ xx = [ "Blue", "Red", "Yellow" ];
 for (i in xx) {
   console.log(xx[i]);
 }
+
+var data = { name: "Yamada", age: 26, country: "Japan" };
+for (var d in data) {
+  console.log(d, data[d]);
+}
+
+
+var set = new Set();
+set.add("Tanaka");
+set.add("Suzuki");
+for (var value of set) {
+  console.log(value);
+}
